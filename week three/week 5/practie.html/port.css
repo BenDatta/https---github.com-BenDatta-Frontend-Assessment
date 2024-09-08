@@ -1,0 +1,31 @@
+*{
+    text-decoration: none;
+}
+.navbar{
+    background-color: cornflowerblue; 
+    font-family: calibri;
+    padding-right: 15px; 
+    padding-left: 15px;
+}
+.navdiv{
+    display: flex; 
+    align-items: center;
+    justify-content:space-between;
+}
+.logo a{
+    font-size: 35px; 
+    color: white;
+}
+li{
+    display: inline-block;
+    list-style: none;
+}
+li a{
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+li :hover{
+    color: aquamarine;
+}
