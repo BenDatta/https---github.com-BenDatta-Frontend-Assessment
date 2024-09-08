@@ -1,31 +1,112 @@
 *{
     text-decoration: none;
+    margin: 10px;
 }
 .navbar{
-    background-color: cornflowerblue; 
-    font-family: calibri;
-    padding-right: 15px; 
-    padding-left: 15px;
+    background-color:rgb(75, 168, 192);
+    padding-right: 30px;
+    padding-left: 30px;
 }
 .navdiv{
-    display: flex; 
+    display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 .logo a{
-    font-size: 35px; 
-    color: white;
+    color: black;
+    font-size:25px;
 }
 li{
-    display: inline-block;
     list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    text-decoration-color: black;
 }
+
 li a{
-    color:white;
-    font-size: 20px;
-    font-weight: bold;
-    margin-right: 25px;
+    color: black; font-size:large;
 }
-li :hover{
-    color: aquamarine;
+
+h1{
+    padding: 0px;
+    font-size: 50px;
+
+}
+.wrapper {
+    text-align: center;
+    position: relative;
+    max-width: 100%; /* Ensures the wrapper doesn't overflow the screen */
+    overflow: hidden; /* Prevents content from spilling out */
+}
+
+.wrapper::before {
+    content: "";
+    background-image: url('https://images.shiksha.com/mediadata/shikshaOnline/mailers/2021/naukri-learning/oct/27oct/what-is-data-analyst.jpg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    opacity: 0.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+blockquote {
+    font-weight: bolder;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 90%; /* Ensures blockquote stays within image boundaries */
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Keeps it positioned correctly within the wrapper */
+    z-index: 1; /* Ensures it stays above the background image */
+}
+h4{
+    font-size: 40px;
+}
+.slider{
+    overflow: hidden;
+}
+slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+.slider figure img{
+    float: left;
+    width: 20%;
+}
+@keyframes slider{
+0% {
+    left: 0;
+}
+20%{
+    left: 0;
+}
+25%{
+    left: -100%;
+}
+45%{
+    left: -100%;
+}
+50%{
+    left:-100%
+}
+70%{
+    left: -200%;
+}
+75%{
+    left: -300%;
+}
+95%{
+    left: -300%;
+}
+100%{
+    left: -400%;
+}
 }
