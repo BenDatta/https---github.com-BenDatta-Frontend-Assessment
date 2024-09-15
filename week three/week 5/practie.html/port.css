@@ -1,11 +1,19 @@
 *{
     text-decoration: none;
+    background-color:#00;
     margin: 10px;
+    text-decoration-color: rgb(212, 196, 15);
+    box-sizing:border-box;
+}
+body{
+    max-width: 1500px;
+    margin: 0 auto;
+    text-decoration-color: rgb(177, 170, 95);
 }
 .navbar{
-    background-color:rgb(75, 168, 192);
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: rgb(49, 135, 107);
 }
 .navdiv{
     display: flex;
@@ -13,23 +21,27 @@
     justify-content: space-between;
 }
 .logo a{
-    color: black;
-    font-size:25px;
+    color: rgb(2, 15, 28);
+    font-size:30px;
+    font-weight: bolder;
 }
 li{
     list-style: none;
     display: inline-block;
     margin-right: 30px;
-    text-decoration-color: black;
+    text-decoration-color: rgb(212, 196, 15);
 }
 
 li a{
-    color: black; font-size:large;
+    color: rgb(2, 15, 28); font-size:large;
+    font-size: larger;
+    font-weight: bold;
 }
 
 h1{
     padding: 0px;
-    font-size: 50px;
+    font-size: 60px;
+    color: rgb(212, 196, 15);
 
 }
 .wrapper {
@@ -41,7 +53,6 @@ h1{
 
 .wrapper::before {
     content: "";
-    background-image: url('https://images.shiksha.com/mediadata/shikshaOnline/mailers/2021/naukri-learning/oct/27oct/what-is-data-analyst.jpg');
     position: absolute;
     top: 0;
     left: 0;
@@ -57,56 +68,101 @@ blockquote {
     font-weight: bolder;
     margin: 0 auto;
     padding: 10px;
-    max-width: 90%; /* Ensures blockquote stays within image boundaries */
+    max-width: 60%; /* Ensures blockquote stays within image boundaries */
     display:flexbox;
     justify-content: center;
     align-items: center;
+    word-spacing: 0.5rem;
     position: relative; /* Keeps it positioned correctly within the wrapper */
-    z-index: 1; /* Ensures it stays above the background image */
 }
 h4{
     font-size: 40px;
 }
-.slider{
+.carousel-container {
+    width: 180%;
+    max-width: 800px;
+    margin: 0 auto;
     overflow: hidden;
-}
-slider figure{
     position: relative;
-    width: 500%;
+    border-radius: 30px;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    transition: transform 10s ease-in-out;
+  }
+  
+  .carousel-slide figure {
+    display:contents;
+  }
+  
+  .carousel-slide img {
+    width: 200%;
+    height: 500px;
+    flex: 0 0 100%;
+    object-fit: cover;
+    margin: 0; /* Remove any space */
+    padding: 0; /* Remove any padding */
+    border: 0; /* Ensure no border spacing */
+
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+    100% { transform: translateX(-500%); }
+  }
+  
+  .carousel-slide {
+    animation: slide 30s infinite;
+  }
+  .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 20px;
+    max-width: 60%;
+  }
+  .cards{
+    margin: 0 auto; padding: 0;
+    max-width: 1400px;
+    display: grid;
+    outline: none; border: none;
+    grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(45deg,rgb(181, 155, 204),lightgreen);
+    position: relative
+  }
+
+button{
+    margin-left: 0;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.direc{
+    margin-top: auto;
+}
+
+.card{
     margin: 0;
-    left: 0;
-    animation: 20s slider infinite;
+    padding: 0;
+    display:grid;
 }
-.slider figure img{
-    float: left;
-    width: 20%;
+button:hover{
+    background-color: rgb(200, 213, 61);
 }
-@keyframes slider{
-0% {
-    left: 0;
-}
-20%{
-    left: 0;
-}
-25%{
-    left: -100%;
-}
-45%{
-    left: -100%;
-}
-50%{
-    left:-100%
-}
-70%{
-    left: -200%;
-}
-75%{
-    left: -300%;
-}
-95%{
-    left: -300%;
-}
-100%{
-    left: -400%;
-}
+
+.card_image{
+    width: 95%;
+    display: block;
+    border-radius: 5px;
+    margin-left: 20px;
 }
