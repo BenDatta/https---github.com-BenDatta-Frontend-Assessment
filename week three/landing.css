@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'roboto',sans-serif;
+}
+
+section{
+    min-height: 100vh;
+    background-image: url("https://images.pexels.com/photos/3182835/pexels-photo-3182835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+nav{
+    height: 80px;
+    justify-content: space-between;
+    display: flex;
+}
+nav h1{
+    float: left;
+    line-height: 80px;
+    font-size: 35px;
+    font-size: inline;
+    color:#eb7620;
+    margin: 0px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0px 5px;
+    margin: 30px;
+}
+nav ul li a{
+    color: #eb7620;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+}
+nav ul li a :hover{
+    background-color:#eb7620;
+    transition: 0.5s ease;
+}
+.article{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 25%;
+    max-height: 100px;
+}
+
+button a{
+    text-decoration: none;
+    color: #eb7620;
+}
+.article h1{
+    margin-bottom: 25px;
+    font-weight: 800px;
+    color: #eb7620;
+    font-size: 36px;
+    letter-spacing: 1.5px;
+}
+p{
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.article .btn{
+    font-size: 15px;
+    text-decoration: none;
+    padding: 12px 25px;
+    color: #fff;
+    background-color: #eb7620;
+}
+
+.article.btn:hover{
+    background-color: #4399fa;
+    transition: 0.5s ease;
+}
